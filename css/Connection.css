@@ -1,0 +1,126 @@
+@import url(/css/variables.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../Img/Nous.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url(../Img/Nous.jpg);
+  background-size: cover;  
+  -webkit-filter: blur(4px);
+  background-size: cover;
+}
+
+
+
+/*----formulaire---*/
+.loginform {
+  background: var(--color-black);
+  width: 450px;
+  color: var(--color-tomato);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 29px 0px var(--color-white) ;
+}
+.loginform p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginform h2 {
+  font-size: 30px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+.loginform input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  right: 0px;
+  border: 6px solid var(--color-white);
+}
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+.loginform input[type="text"],
+input[type="password"], input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--color-greyOlive-form);
+  background: transparent;
+  outline: none;
+  height: 40px;  
+  color:var(--color-white);
+  font-size: 16px;
+}
+.loginform input[type="submit"] {
+  background: var(--color-tomato);
+  color: #fff;
+  font-size: 20px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  transition: 0.4s;
+  border: none;
+}
+.loginform input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--color-tomato-dark);
+}
+.loginform a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-grey-form);
+}
+.loginform .have-not {
+  float: right;
+}
+.loginform a:hover {
+  color: var(--color-tomato);
+}
+
+/*----navbar---*/
+@keyframes navi {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/*-- Responsive CSS --*/
+@media (max-width: 576px) {
+  .loginform {
+    width: 90%;
+  }
+  .loginform a {
+    display: block;
+    text-align: center;
+    float: inherit !important;
+    margin: 10px 0px;
+  }
+}

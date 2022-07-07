@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding: 0;	
+    /* background-color: black;  */
+	background-image: url(../Img/monde.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* le titre dans la navbar */
+.navbar-dark .navbar-brand{
+    color: tomato;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:cursive;
+
+}
+
+/* bouton toggler */
+.navbar-dark .navbar-toggler{ 
+    color: none !important;       
+    box-shadow: none !important; 
+    border: 2px solid; 
+    border-color: rgb(255, 99, 71);
+}
+.navbar-dark .navbar-toggler:hover{    
+    box-shadow: #df3e21; 
+    border-color: #df3e21 ;
+}
+
+
+
+
+.navbar-toggler .navbar-toggler-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+    }
+
+
+
+
+/* les liens de la navbar */
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    font-size: 17px;
+    font-weight: bold !important;
+    text-align: center !important;
+   
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ff6347;     
+    
+}
+
+
+/*bouton de connection*/
+#connection{
+   background-color: #ff6347;
+   font-size: 17px;
+   font-weight: bold;
+
+}
+#connection:hover{
+   background-color: #df3e21;
+
+}
+
+
+
+
+/* les boutons social pied de page */
+#social i {
+   color: tomato;
+  
+}
+
+
+#disconect{
+
+	margin-left: 5px;
+  }
+  
+
+/*******************************************logo ************************************/
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1%;
+	opacity: 0.3;
+}
+
+
+.logo:hover{
+
+	opacity: 1;
+}
+
+
+
+#formulaireContact{
+    display: flex;	
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+
+	
+} 
+
+
+#formulaireContact:first-child{
+    display: flex;
+    flex-direction: column;  
+}
+
+#formulaireContact h1, h3{
+    color: tomato;
+ }
+
+
+ hr{
+
+	color:tomato;
+	border: solid 1px;
+	height : 20px;
+    width: 9%;	
+	align-self: center;
+	opacity: 1;
+	size: 20px;
+
+}
+
+
+
+
+/*
+hr{
+	width: 20%;
+	
+}*/
+
+
+ #contactForm form{
+	display: flex;
+	justify-content:center;
+	flex-direction: column;	
+	} 
+
+#formulaireContact form input, textarea{
+	margin-top: 10px;
+	border-radius: 5px;
+	width: 450px;
+	border: none;
+	padding: 5px;
+}
+
+/* bouton contacter */
+#formulaireContact form [type=submit]{
+	background-color: tomato;
+	
+	color: black;
+	padding: 5px;
+	/* width: auto; */
+	
+	}
+ 
+#formulaireContact form [type=submit]:hover{
+	background-color: rgb(216, 72, 47);
+	color: white;
+	} 
+
+
+.pied {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	align-items: center;
+    margin-top: 80px;
+	
+}	
+
+.pied h6{
+    color: tomato;    
+    text-align: center;
+	
+}
+
+#copyPied{
+    color: tomato;
+    font-family: 'Fuggles', cursive;
+}
+
+#nousSuivre input[type=email]{
+    height: 30px;
+    border-radius: 5px 0px 0px 5px ; 
+    
+}
+
+#nousSuivre input[type=submit]{
+    height: 35px;
+    
+}
+
+
+#abonner{
+    background-color: tomato;
+}
+
+@media screen and (max-width: 990px) {
+
+	.logo img{
+		margin-top: 50px;
+	}
+
+
+	.pied{
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+	.pied > h6{
+		margin-top: 20px;
+		order : 3;
+	}
+
+.navbar{
+	background-color: #212529;
+}
+
+
+
+}

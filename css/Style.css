@@ -1,0 +1,514 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../Img/Nous.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*---header--*/
+.logo{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.clip{
+	display: flex;
+	justify-content: center;
+	
+}
+
+#vidéos{
+	margin-top: 70px;
+	margin-bottom: 60px;
+	clip-path: circle();
+}
+
+#logo{
+	opacity: 0.2;
+	animation: placement 2s ease-in-out 2s normal none;
+	margin-top: 100px;
+	z-index:-1;
+}
+
+/****** A décommenter ********/
+.navbar{
+	padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-toggler{
+
+}
+
+.navbar-collapse{
+	text-align: center;
+    padding: 5px;
+	justify-content: space-around;
+}
+
+
+/*---navbar---*/
+/* .nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color:rgba(0, 0, 0, 0.637);
+	height: 70px;
+	animation: navi 2s ease-in-out 2s 1 normal backwards;	
+	position: fixed;
+	width: 100%;
+}
+
+
+
+.nav h3{
+	font-family: 'Fuggles', cursive;
+	color: tomato;	
+	font-size: 40px;	
+	
+} 
+
+
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	list-style-type: none;	
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	align-items: center;
+	
+}
+
+
+
+
+
+#acceuil{
+	color :tomato;
+	border: solid 1px;
+	padding: 5px;
+} */
+
+
+
+
+/* .navbar a {
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+
+}
+
+
+.navbar a:hover{
+	color: tomato;
+	text-decoration: underline;
+	transition: .5s;
+
+} */
+
+
+
+/* .navbar p:hover{
+	color: tomato;
+	text-decoration: underline;
+	transition: .5s;
+
+}
+
+.navbar p{
+	color:white;
+	font-weight: bold;
+	height: 100%;
+} */
+
+/******** A décommenter ******/
+
+/*--- menu déroulant---- */
+ .deroulant{
+	position: fixed;	
+	padding: 5px 5px;
+	border-radius: 0px 0px 5px 5px; 
+	line-height: 25px;	
+	display:none;
+	list-style: none;
+	background-color:rgba(0, 0, 0, 0.637);	
+	z-index: 1;
+	border-top: transparent;
+	margin: 0.65em 0;	
+}
+
+
+
+
+
+
+
+.Monderoulant:hover > ul {
+	display: block;
+} 
+
+.Monderoulant{
+	position: relative;
+	padding: 0.75em 1em;	
+		
+}
+
+
+
+/* .Monderoulant:hover .déroulant{
+	display: block;
+	position:absolute;
+	top: 40px;
+	padding: 0px;
+	z-index: 100;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.637);
+	box-sizing: border-box;
+	
+} */
+
+
+
+
+
+/*---bouton se connecter--*/
+.seConnect a{
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+	background: tomato;
+	padding: 10px;
+	border-radius: 10px;
+	
+}
+
+.seConnect a:hover{
+	color:black;
+	background:rgb(224, 42, 10);
+	transition: .5s;	
+
+}
+
+
+/* bouton utilisateur connecté */
+
+.compte{
+	display:flex;
+	flex-direction:row;
+}
+
+.compte a{
+	
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+	background: tomato;
+	padding: 10px;
+	border-radius: 10px;
+
+	border-right-width: 5px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+
+
+.compte a:hover{
+	color:black;
+	background:rgb(224, 42, 10);
+	transition: .5s;	
+
+}
+
+
+/*---fin du header----*/
+
+
+
+/* section{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+}
+ */
+
+
+/*---pied de page--*/
+/* footer{
+	background-color:black;
+	display: flex; 
+	justify-content: center;
+	justify-content: space-evenly;
+	color: tomato;
+	height: 350px;
+	margin-top: 80px;
+
+	
+	
+		
+}
+
+footer div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+} */
+#dates{
+	color: tomato;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 10%;
+
+}
+#dates h2{
+	font-family: 'Fuggles', cursive;
+	font-size: 60px;
+	border: transparent;
+	text-shadow: 2px 2px 5px white;
+	animation: dates 2s ease-in-out 2s normal none;
+}
+#dates p{
+	font-weight: bold;
+	word-spacing: 4px;
+	animation: paragraphe 2s ease-in-out 2s normal none;
+
+}
+
+
+
+
+#form{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+    justify-content: space-evenly;
+	color: tomato;
+	height: 360px;
+
+	/* essai de la section date */
+
+	margin-top: 50%;
+	
+}
+
+/* #form div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+} */
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+}
+
+#contact:hover{
+
+}
+
+#contact:active{
+ 
+}
+
+
+
+hr{
+	width: 20%;	
+}
+
+
+#formulaire form{
+	display: flex;
+	flex-direction: column;	
+	padding-bottom: 5%;
+	height: -webkit-fill-available;
+
+}
+
+
+#formulaire form input, textarea{
+	margin-top: 15px;	
+	border-radius: 5px;
+	width: 450px;
+	border: none;
+	padding: 5px;
+}
+
+#formulaire form input:last-child{
+background-color: tomato;
+color:white;
+padding: 5px;
+width: auto;
+
+}
+
+#formulaire form input:last-child:hover{
+	background-color: rgb(224, 42, 10);
+	color: black;
+	}
+
+.lien{
+background-color: tomato;
+width: 25px;
+margin: 5px;
+border-radius: 5px;
+}
+
+
+
+.lien:hover{
+transform: scale(0.7);
+box-shadow: 2px 2px 5px white;
+background:rgb(224, 42, 10);
+}
+
+#reseau{
+	display: flex;
+	
+	
+}
+
+
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background-color: rgb(24, 22, 22);
+		
+		/* height: 30px; */
+		padding-top: 20px;
+		align-items: center;
+	}	
+	
+	footer p{
+		color: tomato;    
+		/* text-align: center; */
+	  
+	}
+	
+	#copy{
+		color: tomato;
+		font-family: 'Fuggles', cursive;
+	}	
+
+
+	/*---média et keyframe--- */
+@media screen and (max-width: 935px){
+	#form{
+		display: flex;
+		flex-direction: column;		
+		height: 650px;
+		padding-top: 50px;
+	}
+	/* #formulaire form input, textarea{
+		
+		
+		margin-top: 15px;	
+	border-radius: 5px;
+	width: 450px;
+	border: none;
+	padding: 5px;
+		
+	} */
+	#formulaire{
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+
+	footer{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+} 
+	
+
+
+	
+@keyframes placement {
+
+	0%{		
+		opacity: 0.7;
+		transform: scale(0.1);
+		
+	}
+
+	50%{
+		opacity: 0.5;
+		transform: rotate(0);
+	
+	}
+
+	100%{
+		
+		transform: rotate(760deg);
+
+	
+	}
+	
+}
+
+
+@keyframes navi{
+	0%{
+		
+		transform: translateY(-100%);
+				
+	}
+	
+
+	50% {
+		transform: translateY(-25%);
+	
+		
+		
+	}
+
+	100% {
+		
+		transform: translateY(0%);
+		
+		
+	}
+}
+	
+
+@keyframes dates{
+	from{
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+
+	
+}
+
+@keyframes paragraphe {
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+	
+}
+
+

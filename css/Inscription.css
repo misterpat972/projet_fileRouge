@@ -1,0 +1,225 @@
+@import url(/css/variables.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../Img/Nous.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url(../Img/Nous.jpg);
+  background-size: cover;
+  z-index: -1;
+  -webkit-filter: blur(4px);
+  background-size: cover;
+}
+
+/*---navbar---*/
+/* le titre dans la navbar */
+.navbar-dark .navbar-brand{
+  color: tomato;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:cursive;
+
+}
+
+/* bouton toggler */
+.navbar-dark .navbar-toggler{ 
+  color: none !important;       
+  box-shadow: none !important; 
+  border: 2px solid; 
+  border-color: rgb(255, 99, 71);
+}
+.navbar-dark .navbar-toggler:hover{    
+  box-shadow: #df3e21; 
+  border-color: #df3e21 ;
+}
+
+
+
+
+.navbar-toggler .navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+  }
+
+
+
+
+/* les liens de la navbar */
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  font-size: 17px;
+  font-weight: bold !important;
+  text-align: center !important;
+ 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #ff6347;     
+  
+}
+
+
+/*bouton de connection*/
+#connection{
+ background-color: #ff6347;
+ font-size: 17px;
+ font-weight: bold;
+
+}
+#connection:hover{
+ background-color: #df3e21;
+
+}
+
+
+
+
+/*---fin navar----*/
+
+/*----formulaire---*/
+.loginform {
+  background: black;
+  width: 450px;  
+  color: tomato;   
+  margin-top: 55px;   
+  top: 50%;
+  left: 50%;  
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 29px 0px #e0e0e0;
+}
+
+.loginform p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginform h2 {
+  font-size: 30px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+.loginform input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  right: 0px;
+  border: 6px solid #e6e6e6;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.loginform input[type="text"],
+input[type="password"], input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--color-greyOlive-form);
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.loginform input[type="submit"] {
+  background: var(--color-tomato);
+  color: var(--color-white);
+  font-size: 20px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  transition: 0.4s;
+  border: none;
+}
+
+.loginform input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--color-tomato-dark);
+}
+.loginform a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-grey-form);
+}
+
+.loginform .have-not {
+  float: right;
+}
+
+.loginform a:hover {
+  color: var(--color-tomato);
+}
+
+
+
+
+
+
+
+
+/*----navbar---*/
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: #212529;
+  }
+
+  .loginform {
+         
+    margin-top: 60px;
+}
+
+}
+
+
+
+
+
+@keyframes navi {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/*-- Responsive CSS --*/
+@media (max-width: 576px) {
+  .loginform {
+    width: 90%;
+  }
+  .loginform a {
+    display: block;
+    text-align: center;
+    float: inherit !important;
+    margin: 10px 0px;
+  }
+}

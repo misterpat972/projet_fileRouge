@@ -1,0 +1,16 @@
+
+@import url("../css/variables.css");
+
+:root {
+    --section-background:  rgb(24, 22, 22);
+    --police-color: tomato;
+}
+
+.gradient-custom {        
+    background: var(--color-black); 
+        
+}
+
+.container{
+   
+}

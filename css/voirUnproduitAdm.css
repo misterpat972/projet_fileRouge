@@ -1,0 +1,15 @@
+
+.container{
+    margin-top: 12vh;
+}
+
+.col-md-12.mt-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+p > img{
+    max-width: 380px;
+}

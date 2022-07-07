@@ -1,0 +1,18 @@
+
+/* ici on à les variables globals CSS qui serviront sur le site */
+:root {
+/* les couleur général du site */
+--color-tomato: #ff6347;
+--color-tomato-dark: #df3e21;
+--color-white: #ffffff;
+--color-black: #000000;
+--color-grey-dark: #181616;
+--color-grey-footer: #212529;
+/* couleur pour le formulaire d'inscrption */
+--color-greyOlive-form: #585555;
+--color-grey-form : #808080;
+
+/* display flex */
+--diplay-flex: flex;
+--diplay-flex-direction-row: row;
+}

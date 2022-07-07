@@ -1,0 +1,424 @@
+@import url("./variables.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url(../Img/Nous.jpg); */
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************************************barNav***************************************/
+/* le titre dans la navbar */
+.navbar-dark .navbar-brand {
+  color: var(--color-tomato);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Fuggles', cursive;
+  font-size: 30px;
+}
+
+/* bouton toggler */
+.navbar-dark .navbar-toggler {
+  color: none !important;
+  box-shadow: none !important;
+  border: 2px solid;
+  border-color: var(--color-tomato);
+}
+.navbar-dark .navbar-toggler:hover {
+  box-shadow: var(--color-tomato-dark);
+  border-color: var(--color-tomato-dark);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* les liens de la navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--color-white);
+  font-size: 17px;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--color-tomato);
+}
+
+/*************** bannière Nav**************/
+#bannière{
+	height : 45em;
+	background-image: url(../Img/Nous.jpg);
+	background-attachment: scroll;
+	background-size: cover;	
+}
+
+/*bouton de connection*/
+#connection {
+  background-color: var(--color-tomato);
+  font-size: 17px;
+  font-weight: bold; 
+}
+
+/********permet de centrer le bouton connexion en mode collapse*********/
+#buttonConnect{
+  text-align: center;
+}
+
+#connection:hover {
+  background-color: var(--color-tomato-dark);
+}
+
+/* bouton deconnection */
+#disconect{
+  margin-left: 5px;
+}
+
+
+/* les boutons social pied de page */
+#social i {
+  color: var(--color-tomato);
+}
+/****************************************************************************fin barNav********************************************************************/
+
+/* bouton utilisateur connecté */
+.compte {
+  display: flex;
+  flex-direction: row;
+}
+
+.compte a {
+  color: var(--color-white);
+  list-style-type: none;
+  text-decoration: none;
+  background: var(--color-tomato);
+  padding: 10px;
+  border-radius: 10px;
+
+  border-right-width: 5px;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+.compte a:hover {
+  color: var(--color-black);
+  background: var(--color-tomato-dark);
+  transition: 0.5s;
+}
+
+/*************************************************************************** section date pageAccueil*****************************************************/
+
+/******corp de page********/
+#dates{
+	background-color: var(--color-grey-dark);
+	height: 40em;
+	color: var(--color-tomato);
+	display: flex;
+	flex-direction: column;
+	text-align: center;	 
+}
+
+#dates > h2 {
+  margin-top: 0.9em;
+  font-size : 30px;
+}
+
+#dates > hr {
+  text-align: center;
+}
+
+#Apropos{
+	display: flex;
+	justify-content: center;
+	padding: 35px;
+	margin-top: 50px;
+}
+
+#premierHr{
+  display: flex;
+  align-self: center;
+}
+
+#image img{
+	width: 350px;
+	height:250px;
+	background-size: 100% 100%;
+	border-radius: 30px;
+}
+
+#collectif{
+	text-align:left;
+	white-space:pre-line;
+	margin-left : 10px;
+	line-height: 1.3em;
+}
+
+#fonctions{
+	display:flex;
+	justify-content: space-around;
+	margin : 10px;	
+}
+
+.fonction{	
+	white-space:pre-line;
+}
+
+
+#dates h2{
+	font-family: 'Fuggles', cursive;
+	font-size: 60px;
+	border: transparent;
+	text-shadow: 2px 2px 5px var(--color-white);
+	animation: dates 2s ease-in-out 2s normal none;
+}
+#dates p{
+	font-weight: bold;
+	word-spacing: 4px;
+	animation: fadeInUp 1s 1s both;  
+ 
+}
+
+
+
+/****************************************************************************formulaire page d'accueil************************************************************/
+
+#form {
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  color: var(--color-tomato);
+  height: 480px;
+  /* margin-top: 50%; */
+}
+
+
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 20%;
+}
+
+#formulaire form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  height: -webkit-fill-available;
+}
+
+#formulaire form input,
+textarea {
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 450px;
+  border: none;
+  padding: 5px;
+}
+
+#formulaire form [type="submit"] {
+  background-color:var(--color-tomato);
+  color: var(--color-white);
+  padding: 5px;
+  width: auto;
+}
+
+#formulaire form [type="submit"]:hover {
+  background-color: var(--color-tomato-dark);
+  color: var(--color-black);
+}
+
+.lien {
+  background-color: var(--color-tomato);
+  width: 25px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.lien:hover {
+  transform: scale(0.7);
+  box-shadow: 2px 2px 5px var(--color-white);
+  background: var(--color-tomato-dark);
+}
+
+#reseau {
+  display: flex;
+}
+
+/********************************************************************************footer page d'accueil*******************************************************/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--color-grey-footer);
+  /* height: 30px; */
+  padding-top: 20px;
+  align-items: center;
+}
+
+footer p {
+  color: var(--color-tomato);
+  /* text-align: center; */
+}
+
+#copy {
+  color: var(--color-tomato);
+  font-family: "Fuggles", cursive;
+}
+
+
+/*---média et keyframe--- */
+@media screen and (max-width: 935px) {
+  #form {
+    display: flex;
+    flex-direction: column;
+    height: 850px;    
+  }
+ 
+  #formulaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+ 
+
+}
+
+
+/**************************************************************** page music *********************************************************************/
+#titres { 
+  font-size: 65px !important;
+	color: tomato;
+	font-family: "Fuggles", cursive;  
+  padding-top: 0.9em; 
+  border: transparent;
+  text-shadow: 2px 2px 5px var(--color-white);
+  animation: dates 2s ease-in-out 2s normal none;
+}
+/******ici on va centrer le hr et le titre******/
+#HrMusic {
+  display: flex;   
+  align-items: center;
+  color: var(--color-tomato); 
+}  
+
+#section_music{
+  background-color: var(--color-grey-dark); 
+}
+
+#btn_acheter{
+  background-color: var(--color-tomato);
+  color: var(--color-black);
+  border : none; 
+}
+
+#btn_acheter:hover{
+  background-color: var(--color-tomato-dark);
+  color: var(--color-black);
+  transition: 0.5s;
+}
+
+/***************************************************************** média query & keyfram *********************************************************************/
+/* navBar */
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: var(--color-grey-footer);
+  }
+
+   /* section accueil dates */
+   #Apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 0px;       
+  }
+ 
+  #dates > h2 {
+    margin-top: 0.2em;    
+  }
+
+  #collectif {
+   white-space: pre-line;
+   margin-top: 15px;
+   text-align: center;
+   margin-left: 0; 
+   line-height: 1.5em;
+  }
+
+  #dates {
+    background-color: var(--color-grey-dark);
+    height: 42em;
+    color: var(--color-tomato);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+
+}
+
+
+/* keyframes */
+@keyframes placement {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(760deg);
+  }
+}
+
+@keyframes navi {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes dates {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes paragraphe {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
